@@ -1,6 +1,13 @@
+# Gems
+require "rubygems"
+require "activeresource"
+require "active_resource_throttle"
+require 'faraday'
+
+
 module Forecast
-  VERSION   = "0.0.2"
-  ApiDomain = "forecastapp.com"
+  VERSION   = "0.0.3"
+  ApiDomain = "https://api.forecastapp.com"
 
   # Class method to load all ruby files from a given path.
   def self.load_all_ruby_files_from_path(path)
@@ -11,10 +18,6 @@ module Forecast
 
 end
 
-# Gems
-require "rubygems"
-require "activeresource"
-require "active_resource_throttle"
 
 # Plugins
 PluginPath = File.join(File.dirname(__FILE__), "forecast", "plugins")
