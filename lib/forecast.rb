@@ -18,12 +18,12 @@ require "active_resource_throttle"
 require "faraday"
 
 # Plugins
-PluginPath = File.join(File.dirname(__FILE__), "forecast", "plugins")
-Harvest.load_all_ruby_files_from_path(PluginPath)
+#PluginPath = File.join(File.dirname(__FILE__), "forecast", "plugins")
+#Harvest.load_all_ruby_files_from_path(PluginPath)
 
 # Base
 require File.join(File.dirname(__FILE__), "forecast", "base")
-# require File.join(File.dirname(__FILE__), "forecast", "resources")
+require File.join(File.dirname(__FILE__), "forecast", "resources")
 
 # Shortcut for Harvest::Base.new
 #
