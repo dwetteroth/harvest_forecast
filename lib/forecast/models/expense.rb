@@ -16,7 +16,7 @@ module Forecast
           @client           = parse(@client, Client)
           @project          = parse(@project, Project)
           @expense_category = parse(@expense_category, Expense_category)
-          @user_assignment  = parse(@user_assignment, User_assignment)
+          @user_assignment  = parse(@user_assignment, Project_user_assignment)
           @invoice          = parse(@invoice, Invoice)
         end
       end
