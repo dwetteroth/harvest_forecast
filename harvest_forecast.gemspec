@@ -18,4 +18,6 @@ Gem::Specification.new do |s|
 
   #dep
   s.add_dependency 'faraday',     '~> 0.8'
+  s.add_dependency("activeresource", [">= 2.1"])
+  s.add_dependency("aiaio-active_resource_throttle", [">= 1.0"])
 end
