@@ -32,6 +32,10 @@ module Forecast
       Harvest::Resources::Project
     end
 
+    # Tasks
+    def tasks
+      Harvest::Resources::Task
+    end
 
     # Assignments
     def assignments

@@ -23,7 +23,7 @@ require "faraday"
 
 # Base
 require File.join(File.dirname(__FILE__), "forecast", "base")
-# require File.join(File.dirname(__FILE__), "forecast", "resources")
+require File.join(File.dirname(__FILE__), "forecast", "resources")
 
 # Shortcut for Harvest::Base.new
 #
